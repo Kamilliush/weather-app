@@ -7,7 +7,7 @@ import TodaysForecastContainer from './compnents/todaysForecast/TodaysForecastCo
 import ForecastContainer from './compnents/forecast/ForecastContainer';
 import SunTimesContainer from './compnents/sunTimes/SunTimesContainer';
 import ConditionsContainer from './compnents/conditions/ConditionsContainer';
-
+import WeatherTipsContainer from './compnents/weatherTips/WeatherTipsContainer';
 function App() {
   const [weather, setWeather] = useState();
   const [weatherForecast, setWeatherForecast] = useState();
@@ -46,6 +46,7 @@ function App() {
       <ForecastContainer cityDataForecast={cityDataForecast} />
       <SunTimesContainer cityDataForecast={cityDataForecast} />
       <ConditionsContainer cityData={cityData} />
+      <WeatherTipsContainer cityData={cityData} />
     </>
   );
 }
