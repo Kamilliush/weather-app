@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import CityToggle from './compnents/cityToggle/CityToggle';
 import MainTemp from './compnents/mainTemp/mainTemp';
 import TodaysForecastContainer from './compnents/todaysForecast/TodaysForecastContainer';
+import ForecastContainer from './compnents/forecast/ForecastContainer';
 import './App.css';
 
 function App() {
@@ -36,10 +37,10 @@ function App() {
 
   return (
     <>
-      <h1>Hello world</h1>
       <CityToggle isGliwice={isGliwice} onSelectGliwice={handleSelectGliwice} onSelectHamburg={handleSelectHamburg} />
       <MainTemp cityData={cityData} />
       <TodaysForecastContainer cityDataForecast={cityDataForecast} />
+      <ForecastContainer cityDataForecast={cityDataForecast} />
     </>
   );
 }
