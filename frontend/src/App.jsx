@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
+import './App.css';
+
 import CityToggle from './compnents/cityToggle/CityToggle';
 import MainTemp from './compnents/mainTemp/mainTemp';
 import TodaysForecastContainer from './compnents/todaysForecast/TodaysForecastContainer';
 import ForecastContainer from './compnents/forecast/ForecastContainer';
 import SunTimesContainer from './compnents/sunTimes/SunTimesContainer';
-
-import './App.css';
+import ConditionsContainer from './compnents/conditions/ConditionsContainer';
 
 function App() {
   const [weather, setWeather] = useState();
@@ -44,6 +45,7 @@ function App() {
       <TodaysForecastContainer cityDataForecast={cityDataForecast} />
       <ForecastContainer cityDataForecast={cityDataForecast} />
       <SunTimesContainer cityDataForecast={cityDataForecast} />
+      <ConditionsContainer cityData={cityData} />
     </>
   );
 }

@@ -7,8 +7,7 @@ export default function SpecificDay({ dayData, index }) {
   return (
     <div key={index}>
       <b>{weekday}</b> <span></span>
-      {maxtemp_c}°C
-      {mintemp_c}°C
+      {maxtemp_c}°C / {mintemp_c}°C
       <img src={condition.icon} alt="" />
     </div>
   );
