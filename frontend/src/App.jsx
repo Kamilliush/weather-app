@@ -3,6 +3,8 @@ import CityToggle from './compnents/cityToggle/CityToggle';
 import MainTemp from './compnents/mainTemp/mainTemp';
 import TodaysForecastContainer from './compnents/todaysForecast/TodaysForecastContainer';
 import ForecastContainer from './compnents/forecast/ForecastContainer';
+import SunTimesContainer from './compnents/sunTimes/SunTimesContainer';
+
 import './App.css';
 
 function App() {
@@ -41,6 +43,7 @@ function App() {
       <MainTemp cityData={cityData} />
       <TodaysForecastContainer cityDataForecast={cityDataForecast} />
       <ForecastContainer cityDataForecast={cityDataForecast} />
+      <SunTimesContainer cityDataForecast={cityDataForecast} />
     </>
   );
 }

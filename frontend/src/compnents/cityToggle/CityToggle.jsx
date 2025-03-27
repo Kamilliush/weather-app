@@ -4,7 +4,7 @@ export default function CityToggle({ isGliwice, onSelectGliwice, onSelectHamburg
       <button className={`cityToggleButton ${isGliwice ? 'active' : ''}`} onClick={onSelectGliwice}>
         Gliwice
       </button>
-      <button lassName={`cityToggleButton ${!isGliwice ? 'active' : ''}`} onClick={onSelectHamburg}>
+      <button className={`cityToggleButton ${!isGliwice ? 'active' : ''}`} onClick={onSelectHamburg}>
         Hamburg
       </button>
     </div>
