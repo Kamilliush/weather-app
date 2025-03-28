@@ -9,8 +9,8 @@ export default function SunTimesContainer({ cityDataForecast }) {
   const sunrise = forecast.forecastday[0].astro.sunrise;
   const sunset = forecast.forecastday[0].astro.sunset;
   return (
-    <div>
-      <h1>Sun Times</h1>
+    <div className="container">
+      <p className="containerHeader">Sun</p>
       <SunTimesGrid sunrise={sunrise} sunset={sunset} />
     </div>
   );

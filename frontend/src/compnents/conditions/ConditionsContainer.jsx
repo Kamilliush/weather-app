@@ -1,5 +1,4 @@
 import ConditionItem from './ConditionItem';
-
 export default function ConditionsContainer({ cityData }) {
   if (!cityData) {
     return <div>Loading weather conditions...</div>;
@@ -7,8 +6,8 @@ export default function ConditionsContainer({ cityData }) {
   const { current } = cityData;
   const { feelslike_c, wind_kph, uv } = current;
   return (
-    <div>
-      <h1>Air Condition</h1>
+    <div className="container">
+      <p className="containerHeader">Air condition</p>
       <ConditionItem
         label="Preveived"
         value={feelslike_c}

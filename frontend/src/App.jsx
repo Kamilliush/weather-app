@@ -39,15 +39,20 @@ function App() {
     : null;
 
   return (
-    <>
-      <CityToggle isGliwice={isGliwice} onSelectGliwice={handleSelectGliwice} onSelectHamburg={handleSelectHamburg} />
-      <MainTemp cityData={cityData} />
-      <TodaysForecastContainer cityDataForecast={cityDataForecast} />
-      <ForecastContainer cityDataForecast={cityDataForecast} />
-      <SunTimesContainer cityDataForecast={cityDataForecast} />
-      <ConditionsContainer cityData={cityData} />
-      <WeatherTipsContainer cityData={cityData} />
-    </>
+    <div className="mainContainer">
+      <div className="leftCol">
+        <CityToggle isGliwice={isGliwice} onSelectGliwice={handleSelectGliwice} onSelectHamburg={handleSelectHamburg} />
+        <MainTemp cityData={cityData} />
+        <TodaysForecastContainer cityDataForecast={cityDataForecast} />
+
+        <SunTimesContainer cityDataForecast={cityDataForecast} />
+        <ConditionsContainer cityData={cityData} />
+        <WeatherTipsContainer cityData={cityData} />
+      </div>
+      <div className="rightCol">
+        <ForecastContainer cityDataForecast={cityDataForecast} />
+      </div>
+    </div>
   );
 }
 

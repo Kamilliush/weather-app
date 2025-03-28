@@ -8,8 +8,8 @@ export default function ForecastContainer({ cityDataForecast }) {
 
   const sevenDays = forecast.forecastday.slice(0, 7);
   return (
-    <div>
-      <h1>Forecast</h1>
+    <div className="container">
+      <p className="containerHeader">Next Days Forecast</p>
       <ForecastGrid sevenDays={sevenDays} />
     </div>
   );

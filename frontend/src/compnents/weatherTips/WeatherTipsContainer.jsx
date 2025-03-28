@@ -5,15 +5,14 @@ export default function WeatherTipsContainer({ cityData }) {
   if (!cityData || !cityData.current) {
     return <div>Loading weather tips...</div>;
   }
-  console.log(cityData.current.temp_c);
   const temperature = Math.round(cityData.current.temp_c);
   const conditionText = cityData.current.condition.text.toLowerCase();
 
   const tips = getWeatherTips(temperature, conditionText);
 
   return (
-    <div>
-      <h1>Today's Tip</h1>
+    <div className="container">
+      <p className="containerHeader">Today's tips</p>
       {tips.length === 0 ? (
         <p>No specific tips for now.</p>
       ) : (

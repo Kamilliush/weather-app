@@ -1,0 +1,23 @@
+.todaysForecastGrid {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hourCard {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #161619;
+  margin: 8px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform-origin: center;
+  flex: 0 0 calc(100% / 7 - 16px);
+}
+
+.hourCard:hover {
+  transform: scale(1.07);
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}

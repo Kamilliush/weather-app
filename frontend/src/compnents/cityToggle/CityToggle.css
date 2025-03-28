@@ -1,0 +1,31 @@
+.toggleContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  width: 150px;
+  text-align: center;
+  color: #54595d;
+
+  cursor: pointer;
+  transition: color 0.2s, font-weight 0.2s;
+}
+
+.toggleButton:hover {
+  color: #b0b0b0;
+}
+
+.toggleButton.active {
+  font-weight: bold;
+  color: #fdfcdc;
+}
+
+@media (max-width: 1199px) {
+  .toggleButton {
+    font-size: 2rem;
+  }
+}

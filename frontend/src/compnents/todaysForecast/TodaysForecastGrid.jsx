@@ -1,10 +1,12 @@
-import TodaysSpecificHour from './TodaysSpecificHour';
+import HourCard from './HourCard';
 
 export default function TodaysForecastGrid({ nextHours }) {
   return (
-    <div>
+    <div className="todaysForecastGrid">
       {nextHours.map((hourData, index) => (
-        <TodaysSpecificHour key={index} hourData={hourData} />
+        <div>
+          <HourCard key={index} hourData={hourData} />
+        </div>
       ))}
     </div>
   );
