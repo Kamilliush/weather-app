@@ -4,11 +4,12 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #1d1d1d;
   color: #fdfcdc;
+  display: flex;
+  justify-content: center;
 }
 
 .mainContainer {
   display: flex;
-  margin: 50px;
   width: 90vw;
   background-color: #121212;
   border-radius: 10px;
@@ -35,4 +36,25 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
+}
+
+.small {
+  display: block;
+}
+.big {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .small {
+    display: none;
+  }
+  .big {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  .leftCol {
+    width: 100%;
+  }
 }

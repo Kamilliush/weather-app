@@ -1,4 +1,5 @@
 import ForecastGrid from './ForecastGrid';
+import './Forecast.css';
 
 export default function ForecastContainer({ cityDataForecast }) {
   if (!cityDataForecast || !cityDataForecast.forecast) {
@@ -10,6 +11,7 @@ export default function ForecastContainer({ cityDataForecast }) {
   return (
     <div className="container">
       <p className="containerHeader">Next Days Forecast</p>
+
       <ForecastGrid sevenDays={sevenDays} />
     </div>
   );

@@ -1,4 +1,5 @@
 import SunTimesGrid from './SunTimesGrid';
+import './SunTimes.css';
 
 export default function SunTimesContainer({ cityDataForecast }) {
   if (!cityDataForecast || !cityDataForecast.forecast) {
@@ -10,7 +11,6 @@ export default function SunTimesContainer({ cityDataForecast }) {
   const sunset = forecast.forecastday[0].astro.sunset;
   return (
     <div className="container">
-      <p className="containerHeader">Sun</p>
       <SunTimesGrid sunrise={sunrise} sunset={sunset} />
     </div>
   );

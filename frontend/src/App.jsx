@@ -44,13 +44,23 @@ function App() {
         <CityToggle isGliwice={isGliwice} onSelectGliwice={handleSelectGliwice} onSelectHamburg={handleSelectHamburg} />
         <MainTemp cityData={cityData} />
         <TodaysForecastContainer cityDataForecast={cityDataForecast} />
+        <div className="small">
+          <ForecastContainer cityDataForecast={cityDataForecast} />
+        </div>
 
-        <SunTimesContainer cityDataForecast={cityDataForecast} />
         <ConditionsContainer cityData={cityData} />
         <WeatherTipsContainer cityData={cityData} />
+        <div className="small">
+          <SunTimesContainer cityDataForecast={cityDataForecast} />
+        </div>
       </div>
       <div className="rightCol">
-        <ForecastContainer cityDataForecast={cityDataForecast} />
+        <div className="big">
+          <ForecastContainer cityDataForecast={cityDataForecast} />
+        </div>
+        <div className="big">
+          <SunTimesContainer cityDataForecast={cityDataForecast} />
+        </div>
       </div>
     </div>
   );

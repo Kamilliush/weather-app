@@ -1,0 +1,30 @@
+.sunTimesGrid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sunTime {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #161619;
+  margin: 8px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform-origin: center;
+}
+
+.sunTime:hover {
+  transform: scale(1.07);
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 992px) {
+  .sunTimesGrid {
+    flex-direction: row;
+  }
+  .sunTime {
+    width: 100%;
+  }
+}

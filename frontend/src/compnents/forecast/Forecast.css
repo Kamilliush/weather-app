@@ -1,0 +1,68 @@
+/* dsds */
+.dayCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #161619;
+  margin: 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform-origin: center;
+
+  flex-wrap: nowrap;
+  white-space: nowrap;
+
+  flex: 0 0 calc(100% / 7 - 16px);
+}
+
+.weekdayLong {
+  display: none;
+}
+
+.forecastGrid {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dayInfoSmall {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.dayInfoBig {
+  display: none;
+}
+@media (min-width: 992px) {
+  .forecastGrid {
+    flex-direction: column;
+  }
+  .weekday {
+    display: none;
+  }
+  .weekdayLong {
+    display: inline;
+  }
+  .brDayTemp {
+    display: none;
+  }
+  .dayInfoSmall {
+    display: none;
+  }
+  .dayInfoBig {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.dayCard:hover {
+  transform: scale(1.07);
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
