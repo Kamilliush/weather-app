@@ -1,9 +1,15 @@
-export default function ConditionItem({ label, icon, value }) {
+import React from 'react';
+
+export default function ConditionItem({ label, icon, value, unit }) {
   return (
-    <div>
-      <img src={icon} alt={`${label} icon`} width="50px" />
-      {label}: <span></span>
-      {value}
+    <div className="conditionItem">
+      <div className="conditionIcon">{icon}</div>
+      <p>
+        <b>{label}:</b>{' '}
+        <span style={{ whiteSpace: 'nowrap' }}>
+          {Math.round(value)} {unit}
+        </span>
+      </p>
     </div>
   );
 }

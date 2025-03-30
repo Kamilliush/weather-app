@@ -1,25 +1,25 @@
+import React from 'react';
 import ConditionItem from './ConditionItem';
+import './Conditions.css';
+import { WiThermometer, WiStrongWind, WiFog, WiDaySunny } from 'react-icons/wi';
+
 export default function ConditionsContainer({ cityData }) {
   if (!cityData) {
     return <div>Loading weather conditions...</div>;
   }
+
   const { current } = cityData;
-  const { feelslike_c, wind_kph, uv } = current;
+  const { feelslike_c, wind_kph, uv, vis_km } = current;
+
   return (
     <div className="container">
-      <p className="containerHeader">Air condition</p>
-      <ConditionItem
-        label="Preveived"
-        value={feelslike_c}
-        icon="https://cdn-icons-png.flaticon.com/512/3313/3313902.png"
-      />
-      <ConditionItem
-        label="Wind"
-        value={wind_kph}
-        icon="https://cdn-icons-png.flaticon.com/512/824/824695.png
-"
-      />
-      <ConditionItem label="UV Index" value={uv} icon="https://cdn-icons-png.flaticon.com/512/606/606795.png" />
+      <p className="containerHeader">Air conditions</p>
+      <div className="conditionGrid">
+        <ConditionItem label="Perceived" value={feelslike_c} unit={'°C'} icon={<WiThermometer size={60} />} />
+        <ConditionItem label="Wind" value={wind_kph} unit={'km/h'} icon={<WiStrongWind size={60} />} />
+        <ConditionItem label="Visibility" value={vis_km} unit={'km'} icon={<WiFog size={60} />} />
+        <ConditionItem label="UV Index" value={uv} unit={''} icon={<WiDaySunny size={60} />} />
+      </div>
     </div>
   );
 }

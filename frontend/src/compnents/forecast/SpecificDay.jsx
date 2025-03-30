@@ -7,9 +7,9 @@ export default function SpecificDay({ dayData, index }) {
 
   return (
     <div key={index} className="dayCard">
-      <b class="weekday">{weekday}</b>
+      <span class="weekday">{weekday}</span>
       <span></span>
-      <b class="weekdayLong">{weekdayLong}</b>
+      <span class="weekdayLong">{weekdayLong}</span>
       <span></span>
       <div className="dayInfoSmall">
         <img src={condition.icon} alt="" />
