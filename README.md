@@ -23,7 +23,7 @@ This is a fullstack weather application that displays current weather and foreca
 ### Data Source:
 - [WeatherAPI](https://www.weatherapi.com/)
 
-### How to Run the Application
+## How to Run the Application
 
 ### Backend
 
@@ -43,14 +43,14 @@ This is a fullstack weather application that displays current weather and foreca
 3. Start the frontend development server:
    npm run dev
  
-### Frontend-Backend Communication
+## Frontend-Backend Communication
 
 The frontend sends requests to the backend.
 The backend uses Axios to fetch real-time weather data from WeatherAPI.
 The backend then responds with parsed weather data, which the frontend displays.
 
 
-### Features Implemented
+## Features Implemented
 
 - Current weather display (temperature, condition, city selection)
 - Hourly forecast slider with scrollable weather cards
