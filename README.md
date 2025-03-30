@@ -45,9 +45,9 @@ This is a fullstack weather application that displays current weather and foreca
  
 ## Frontend-Backend Communication
 
-The frontend sends requests to the backend.
-The backend uses Axios to fetch real-time weather data from WeatherAPI.
-The backend then responds with parsed weather data, which the frontend displays.
+- The frontend sends requests to the backend.
+- The backend uses Axios to fetch real-time weather data from WeatherAPI.
+- The backend then responds with parsed weather data, which the frontend displays.
 
 
 ## Features Implemented
