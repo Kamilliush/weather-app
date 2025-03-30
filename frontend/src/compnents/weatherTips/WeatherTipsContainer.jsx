@@ -1,5 +1,6 @@
 import { getWeatherTips } from './tipsDatabase';
 import TipItem from './TipItem';
+import './weatherTips.css';
 
 export default function WeatherTipsContainer({ cityData }) {
   if (!cityData || !cityData.current) {
