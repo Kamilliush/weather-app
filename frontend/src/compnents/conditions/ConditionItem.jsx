@@ -5,7 +5,7 @@ export default function ConditionItem({ label, icon, value, unit }) {
     <div className="conditionItem">
       <div className="conditionIcon">{icon}</div>
       <p>
-        <b>{label}:</b>{' '}
+        <b style={{ whiteSpace: 'nowrap' }}>{label}:</b>{' '}
         <span style={{ whiteSpace: 'nowrap' }}>
           {Math.round(value)} {unit}
         </span>

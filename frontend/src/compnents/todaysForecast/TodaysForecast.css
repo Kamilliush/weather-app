@@ -18,6 +18,22 @@
 }
 
 .hourCard:hover {
-  transform: scale(1.07);
+  transform: scale(1.05);
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
 }
+
+.todaysForecastGrid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.todaysForecastGrid::-webkit-scrollbar-track {
+  background: #121212;
+  border-radius: 4px;
+}
+
+.todaysForecastGrid::-webkit-scrollbar-thumb {
+  background-color: #fdfcdc;
+  border-radius: 4px;
+}
+
+

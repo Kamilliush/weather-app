@@ -18,3 +18,17 @@
 .conditionIcon {
   color: #121212;
 }
+
+.conditionGrid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.conditionGrid::-webkit-scrollbar-track {
+  background: #121212;
+  border-radius: 4px;
+}
+
+.conditionGrid::-webkit-scrollbar-thumb {
+  background-color: #fdfcdc;
+  border-radius: 4px;
+}
