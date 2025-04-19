@@ -4,7 +4,19 @@ const cors = require('cors');
 
 const app = express();
 const PORT = 5005;
-const API_KEY = '1db4ae24964b4d9a80f132847251904';
+
+const fs = require('node:fs');
+var API_KEY = '';
+
+fs.readFile('apiKey', 'utf8', (err, data) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+  API_KEY = data;
+  console.log('API key loaded');
+  console.log(data);
+});
 
 app.use(cors());
 
