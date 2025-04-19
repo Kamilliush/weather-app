@@ -10,17 +10,20 @@ This is a fullstack weather application that displays current weather and foreca
 ## 🛠️ Technologies Used
 
 ### Backend:
+
 - Node.js
 - Express.js
 - Axios (for external API calls)
 - CORS
 
 ### Frontend:
+
 - React
 - Vite
 - React Icons
 
 ### Data Source:
+
 - [WeatherAPI](https://www.weatherapi.com/)
 
 ## How to Run the Application
@@ -31,7 +34,9 @@ This is a fullstack weather application that displays current weather and foreca
    cd backend
 2. Install dependencies:
    npm install
-3. Start the backend server:
+3. Go to https://www.weatherapi.com and get your api key
+4. Create 'apiKey' file in backend folder and paste your api key there
+5. Start the backend server:
    node index.js
 
 ### Frontend
@@ -42,13 +47,12 @@ This is a fullstack weather application that displays current weather and foreca
    npm install
 3. Start the frontend development server:
    npm run dev
- 
+
 ## Frontend-Backend Communication
 
 - The frontend sends requests to the backend.
 - The backend uses Axios to fetch real-time weather data from WeatherAPI.
 - The backend then responds with parsed weather data, which the frontend displays.
-
 
 ## Features Implemented
 
